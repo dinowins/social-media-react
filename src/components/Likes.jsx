@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 class Likes extends React.Component{
 
+
 constructor(props){
   super(props);
   this.state = {

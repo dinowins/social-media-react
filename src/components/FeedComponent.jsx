@@ -4,6 +4,8 @@ import PropTypes from "prop-types";
 import Likes from './Likes'
 
 function FeedComponent(props){
+
+
   const style = {
     border: "1px solid gray",
     width: "40vw",
@@ -26,11 +28,7 @@ function FeedComponent(props){
   }
   return (
     <div style={style}>
-      <div>
-        <img style={image} src={props.picture}/>
-      </div>
         <div style={column}>
-          <h3>{props.firstName} {props.lastName}</h3>
           <p>{props.text}</p>
         </div>
         <div>
@@ -41,9 +39,6 @@ function FeedComponent(props){
 }
 
 FeedComponent.propTypes = {
-  picture: PropTypes.string,
-  firstName: PropTypes.string,
-  lastName: PropTypes.string,
   text: PropTypes.string
 }
 
