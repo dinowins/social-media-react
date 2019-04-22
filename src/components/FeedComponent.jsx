@@ -1,6 +1,7 @@
 import React from "react";
 import pic from "../assets/images/pic.jpg";
 import PropTypes from "prop-types";
+import Likes from './Likes'
 
 function FeedComponent(props){
   const style = {
@@ -31,6 +32,9 @@ function FeedComponent(props){
         <div style={column}>
           <h3>{props.firstName} {props.lastName}</h3>
           <p>{props.text}</p>
+        </div>
+        <div>
+          <h3><Likes/></h3>
         </div>
     </div>
   )
